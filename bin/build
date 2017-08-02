@@ -1,0 +1,62 @@
+#!/usr/bin/env bash
+
+# rebuild docs directory
+
+idx_head="<h1>SLIDES</h1><table>"
+idx_tail="</table>"
+idx_file="../docs/index.html"
+
+function generate_html() {
+  src=$1
+  tgt=../docs/$2
+  idx=$tgt/index.html
+  [ -f "$idx" ] && [ "$idx" -nt "$src" ] && return
+  echo ----- Generate Static HTML for $src
+  cmd="reveal-md $src --disable-auto-open --static $tgt"
+  echo $cmd
+  $cmd
+}
+
+function generate_pdf() {
+  src=$1
+  pdf=../docs/PDF/$2.pdf
+  [ -f "$pdf" ] && [ "$pdf" -nt "$src" ] && return
+  echo ----- Generate PDF for $src
+  cmd="reveal-md $src --disable-auto-open --print $pdf"
+  echo $cmd
+  $cmd
+}
+
+function index_row() {
+  src=$1
+  root=$2
+  idx=$3
+  row="
+  <tr>
+  <td><b>$root</b></td>
+  <td>
+  <a target="_blank" href="$root/index.html">HTML</a>
+  </td>
+  <td>
+  <a target="_blank" href="PDF/$root.pdf">PDF</a>
+  </td>
+  </tr>"
+  echo $row >> $idx
+}
+
+mkdir -p docs/PDF
+
+cd src
+
+echo $idx_head > $idx_file
+
+for file in $(ls *md); do
+  root=$(echo $file | cut -f 1 -d '.')
+  generate_html $file $root
+  generate_pdf  $file $root
+  index_row     $file $root $idx_file
+done
+
+echo $idx_tail >> $idx_file
+
+echo Done.
