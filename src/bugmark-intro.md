@@ -76,7 +76,7 @@ Net0, Net30, 12 equal monthly installments, Bug Subsumption.
 
 ---
 
-### Advanced Features II
+### Advanced Features III
 
 * Specified Parties:
 > "I'll pay 10 if Joe Blow fixes bug #2 by 1/1/18"
@@ -105,11 +105,11 @@ Automatically:
 
 ## Secondary Use Cases: Secondary Markets
 
+Verifiable, immutable data is suitable for secondary markets.  Those markets can also provide intelligence.
+
 > "I bet $10 that every issue in which Bob is counterparty to a reward this year gets closed."
 
-> "I bet that any project in which NO published contracts are countered for one month will see a drop in the contributor count month over month until that is reversed."
-
-Verifiable, immutable data is suitable for secondary markets.  Those markets can also provide intelligence.
+> "I bet $10 that new_contributor_count is directly proportional to bids countered this month."
 
 ---
 
