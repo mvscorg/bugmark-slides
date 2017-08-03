@@ -59,22 +59,30 @@ Provides intelligence even if no counterparty.
 ### Features for more advanced use cases.
 
 * Odds:
-> "I'll pay 10 if it's fixed today, you pay 100 if it isn't"
+> "I'll pay 10 if it's fixed today, you pay 100 if it isn't."
+
+* Payout Algorithms:
+Net0, Net30, 12 equal monthly installments, Bug Subsumption.
+
+---
+
+### Features for more advanced use cases II.
 
 * Specified Parties:
 > "I'll pay 10 if Joe Blow fixes bug #2 by 1/1/18"
 
----
+* Counter-Offers:
+Alert publisher of counter-offer, close out old bid if he takes it.
 
-## Category of Use Cases: Arbitrage
+## Secondary Use Cases: Arbitrage
 
-Sam is a project manager with a big rolodex of developers.
+Ex: Sam is a project manager with a big rolodex of developers.
 
 Sam makes counterparty bids on a large number of rewards, and hires developers as needed in her locale to close the issues.
 
 ---
 
-## Category of Use Cases: Bots
+## Secondary Use Cases: Bots
 
 Automatically:
 
@@ -83,7 +91,7 @@ Automatically:
 
 ---
 
-## Other Future Cases: Secondary Markets
+## Secondary Use Cases: Secondary Markets
 
 > "I bet $10 that every issue in which Bob is counterparty to a reward this year gets closed."
 
