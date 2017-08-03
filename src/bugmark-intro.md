@@ -24,7 +24,7 @@ Also used for things like feature poker.
 
 ## Reward Data: Simple Reward
 
-|   Reward Attributes    |                                                   |
+|   Reward Match Params    |                                                   |
 |---------------------|----------------------------------------------------------|
 | Repository    | Selected prior in UI |
 | Issue Number | 2             |
@@ -42,12 +42,7 @@ Also used for things like feature poker.
 | Publisher   | ID of person making the prediction |
 | Amount | 10             |
 
-|   Counterparty Bid Attributes   |                                                   |
-|---------------------|----------------------------------------------------------|
-| Counterparty   | ID of person taking the other side |
-| Amount | 10             |
-
-These bids match so the market makes a deal.
+When an opposite counterparty bid is created, the market makes a deal.
 
 ---
 
@@ -57,6 +52,47 @@ These bids match so the market makes a deal.
 
 No bug number in the attributes.  CVE database instead of a repo.
 
+Provides intelligence even if no counterparty.  
+
 ---
 
-## Use Case: 
+### Features for more advanced use cases.
+
+* Odds:
+> "I'll pay 10 if it's fixed today, you pay 100 if it isn't"
+
+* Specified Parties:
+> "I'll pay 10 if Joe Blow fixes bug #2 by 1/1/18"
+
+---
+
+## Category of Use Cases: Arbitrage
+
+Sam is a project manager with a big rolodex of developers.
+
+Sam makes counterparty bids on a large number of rewards, and hires developers as needed in her locale to close the issues.
+
+---
+
+## Category of Use Cases: Bots
+
+Automatically:
+
+* Bid on bugs that create high support costs.
+* Invest in open source projects that your business depends on.
+
+---
+
+## Other Future Cases: Secondary Markets
+
+> "I bet $10 that every issue in which Bob is counterparty to a reward this year gets closed."
+
+Verifiable, immutable data is suitable for secondary markets.  Those markets can also provide intelligence.  Reputation of Bob, for instance.
+
+---
+
+## Many more
+
+There are more.  Check out user stories, or add some - here:
+
+https://github.com/mvscorg/bugmark/wiki/Dapp-Design#user-stories
