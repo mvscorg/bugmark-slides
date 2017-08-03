@@ -56,7 +56,17 @@ Provides intelligence even if no counterparty.
 
 ---
 
-### Features for more advanced use cases.
+### Advanced Features I
+
+* Tradable Contracts:
+A bid can be wrapped in ERC20 so it can be resold.
+
+* Derivatives:
+Packaging of tradeable contracts for secondary markets.
+
+---
+
+### Advanced Features II
 
 * Odds:
 > "I'll pay 10 if it's fixed today, you pay 100 if it isn't."
@@ -66,13 +76,15 @@ Net0, Net30, 12 equal monthly installments, Bug Subsumption.
 
 ---
 
-### Features for more advanced use cases II.
+### Advanced Features II
 
 * Specified Parties:
 > "I'll pay 10 if Joe Blow fixes bug #2 by 1/1/18"
 
 * Counter-Offers:
 Alert publisher of counter-offer, close out old bid if he takes it.
+
+---
 
 ## Secondary Use Cases: Arbitrage
 
@@ -95,12 +107,14 @@ Automatically:
 
 > "I bet $10 that every issue in which Bob is counterparty to a reward this year gets closed."
 
-Verifiable, immutable data is suitable for secondary markets.  Those markets can also provide intelligence.  Reputation of Bob, for instance.
+> "I bet that any project in which NO published contracts are countered for one month will see a drop in the contributor count month over month until that is reversed."
+
+Verifiable, immutable data is suitable for secondary markets.  Those markets can also provide intelligence.
 
 ---
 
 ## Many more
 
-There are more.  Check out user stories, or add some - here:
+Check out user stories, or add some - here:
 
 https://github.com/mvscorg/bugmark/wiki/Dapp-Design#user-stories
