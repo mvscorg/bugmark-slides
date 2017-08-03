@@ -60,6 +60,15 @@ Contract TYPES
 
 ---
 
+## Useful Resources
+
+* A security expert
+* A designer
+* A market design expert
+* 2-4 foundation customers/users
+
+---
+
 ## Overall Roadmap
 
 * Simplest Working System: Standup Poker
