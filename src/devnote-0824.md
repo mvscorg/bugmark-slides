@@ -4,9 +4,12 @@
 
 ## Actions Last Week 
 
+* Next-Step Focus & Plan [DONE]
+
 * Deploy Integrated Ethereum/Rails to Production [NOT DONE]
 
-* Next-Step Focus & Plan [DONE]
+  - working ethereum node
+  - need help configuring a private chain
 
 ---
 
