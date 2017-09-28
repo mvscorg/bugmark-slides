@@ -1,14 +1,15 @@
 # BugMark 
 
-A Blockchain Futures Market for Software Issues
+A Blockchain Market for Software Issues
 
-September 18, 2017
+September 21, 2017
 
 ---
 
 ## Agenda
 
 - Introducing BugMark
+- Demo
 - Our Blockchain Methodology
 
 ---
@@ -18,8 +19,8 @@ September 18, 2017
 - Don Marti: the Visionary
 - Rich Bodo: the Evangalist
 - Malvika Rao: the Economist
-- Andy Leak: the Developer
-- Zvi Boshernitzan: the Brain
+- Andy Leak: the Rails Dev
+- Zvi Boshernitzan: the Solidity Dev
 
 Plus: our **design team** and emerging **community**
 
@@ -38,7 +39,7 @@ Plus: our **design team** and emerging **community**
 
 ## Our Product
 
-BugMark is a Blockchain Futures Market for Software Issues
+BugMark is a Blockchain Market for Software Issues
 
 ---
 
@@ -47,6 +48,36 @@ BugMark is a Blockchain Futures Market for Software Issues
 BugMark provides price signals that direct resources to areas of greatest value.
 
 No other method is more effective or efficient.
+
+---
+
+## BugMark Trades Futures Contracts
+
+__Reward Contracts__ for fixes
+
+__Forecast Contract__ for information 
+
+---
+
+## Example: Documentation Fixes
+
+Workflow and Diagram TBD
+
+---
+
+## Example: PKI Vulnerability 
+
+Workflow and Diagram TBD
+
+---
+
+## OpenSource Problems
+
+- Developer Burnout
+- Abandonware
+- Security Holes
+
+Users, Developers/Managers, Security Staff
 
 ---
 
@@ -70,36 +101,14 @@ to get advanced warning of vulnerabilities
 
 ## A New Approach
 
-Unlike __bug bounty systems__ : tradable contracts that reach a market
-price
+Unlike __bug bounty systems__ : tradable contracts at market price
 
-Unlike __kickstarter campaigns__ : fine-grained contracts attached to
-individual GitHub issues
+Unlike __kickstarter campaigns__ : fine-grained contracts attached to GitHub issues
 
-Unlike __social signals__ (like public compaints) : a positive outlet for
-express priorities and support developers
+Unlike __social signals__ : a positive outlet for priorities and develoer support
 
 ---
 
-## Two Types of Futures Contracts
-
-__Reward Contracts__ for fixes
-
-__Forecast Contract__ for information 
-
----
-
-## Example: Documentation Fixes
-
-Workflow and Diagram TBD
-
----
-
-## Example: PKI Vulnerability 
-
-Workflow and Diagram TBD
-
----
 
 ## The BugMark Ecosystem
 
@@ -112,6 +121,13 @@ A core market that supports many domains
 - Pull issues from trackers  
 - GitHub first, others later
 - Trade execution on blockchain
+
+---
+
+## Anatomy of a Trade
+
+- asdf
+- qwer
 
 ---
 
@@ -129,8 +145,8 @@ Theory of the Firm
 
 - Command and Control
 - Markets
-- Peer Production
-- **Peer Production with Price Signals**
+- Open Source
+- **>> Peer Production with Price Signals <<**
 
 ---
 
@@ -145,9 +161,8 @@ Theory of the Firm
 ## Our Intention
 
 - world's best issues futures market 
-- a profitable company to maintain the core
-- a stable home for employees to show their best
-- a supportive ecosystem with thousands of participants
+- a stable company to maintain the core
+- a large supportive ecosystem 
 
 ---
 

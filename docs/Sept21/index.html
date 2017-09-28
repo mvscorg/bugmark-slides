@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>reveal-md</title>
+        <link rel="stylesheet" href="./css/reveal.css">
+        <link rel="stylesheet" href="./css/theme/black.css" id="theme">
+        <link rel="stylesheet" href="./css/highlight/zenburn.css">
+        <link rel="stylesheet" href="./css/print/paper.css" type="text/css" media="print">
+
+    </head>
+    <body>
+
+        <div class="reveal">
+            <div class="slides"><section  data-markdown><script type="text/template"># BugMark 
+
+A Blockchain Market for Software Issues
+
+September 21, 2017
+</script></section><section  data-markdown><script type="text/template">
+## Agenda
+
+- Introducing BugMark
+- Demo
+- Our Blockchain Methodology
+</script></section><section  data-markdown><script type="text/template">
+## BugMark Team
+
+- Don Marti: the Visionary
+- Rich Bodo: the Evangalist
+- Malvika Rao: the Economist
+- Andy Leak: the Rails Dev
+- Zvi Boshernitzan: the Solidity Dev
+
+Plus: our **design team** and emerging **community**
+</script></section><section  data-markdown><script type="text/template">
+## Our History
+
+- 20 years of open-source 
+- July: research starts
+- Aug: first prototype
+- Sep: first presentation
+- Oct: first show
+- Nov: public launch
+</script></section><section  data-markdown><script type="text/template">
+## Our Product
+
+BugMark is a Blockchain Market for Software Issues
+</script></section><section  data-markdown><script type="text/template">
+## Our Value
+
+BugMark provides price signals that direct resources to areas of greatest value.
+
+No other method is more effective or efficient.
+</script></section><section  data-markdown><script type="text/template">
+## BugMark Trades Futures Contracts
+
+__Reward Contracts__ for fixes
+
+__Forecast Contract__ for information 
+</script></section><section  data-markdown><script type="text/template">
+## Example: Documentation Fixes
+
+Workflow and Diagram TBD
+</script></section><section  data-markdown><script type="text/template">
+## Example: PKI Vulnerability 
+
+Workflow and Diagram TBD
+</script></section><section  data-markdown><script type="text/template">
+## OpenSource Problems
+
+- Developer Burnout
+- Abandonware
+- Security Holes
+
+Users, Developers/Managers, Security Staff
+</script></section><section  data-markdown><script type="text/template">
+## for Users
+
+to communicate needs and priorities
+</script></section><section  data-markdown><script type="text/template">
+## for Developers and Managers
+
+to identify highest-value fixes
+</script></section><section  data-markdown><script type="text/template">
+## for Security Professionals
+
+to get advanced warning of vulnerabilities
+</script></section><section  data-markdown><script type="text/template">
+## A New Approach
+
+Unlike __bug bounty systems__ : tradable contracts at market price
+
+Unlike __kickstarter campaigns__ : fine-grained contracts attached to GitHub issues
+
+Unlike __social signals__ : a positive outlet for priorities and develoer support
+</script></section><section  data-markdown><script type="text/template">
+
+## The BugMark Ecosystem
+
+A core market that supports many domains
+</script></section><section  data-markdown><script type="text/template">
+## How it Works
+
+- Pull issues from trackers  
+- GitHub first, others later
+- Trade execution on blockchain
+</script></section><section  data-markdown><script type="text/template">
+## Anatomy of a Trade
+
+- asdf
+- qwer
+</script></section><section  data-markdown><script type="text/template">
+## Why Blockchain?
+
+- a neutral trusted platform
+- transact in real currency
+- extensible
+</script></section><section  data-markdown><script type="text/template">
+## A New Economic Model
+
+Theory of the Firm
+
+- Command and Control
+- Markets
+- Open Source
+- **>> Peer Production with Price Signals <<**
+</script></section><section  data-markdown><script type="text/template">
+## A Better Ecosystem
+
+- outlet for users
+- compensation for
+- open-source health metrics
+</script></section><section  data-markdown><script type="text/template">
+## Our Intention
+
+- world's best issues futures market 
+- a stable company to maintain the core
+- a large supportive ecosystem 
+</script></section><section  data-markdown><script type="text/template">
+## We need your Help!
+
+- funding
+- contributors
+- development partners
+- leadership roles
+</script></section><section  data-markdown><script type="text/template">
+## PART 2
+
+OUR BLOCKCHAIN METHODOLOGY
+</script></section><section  data-markdown><script type="text/template">
+## Background
+
+- Blockchain is new and hard
+- The developer community is small
+- We want to build a developer community
+- We have an opinion on best practice
+</script></section><section  data-markdown><script type="text/template">
+## Incrementalism
+
+- Leverage existing skills
+- Prototype with tools you already know
+- Extend into the blockchain world bit by bit
+</script></section><section  data-markdown><script type="text/template">
+## Event Sourcing / CQRS
+
+- Use traditional tools - with one tweak
+- All database writes are done with **commands**
+- Commands emit events
+- Events are the **source of truth**
+</script></section><section  data-markdown><script type="text/template">
+## Diagram
+
+TBD
+</script></section><section  data-markdown><script type="text/template">
+## WAT??
+
+Out of time  :-)
+</script></section><section  data-markdown><script type="text/template">
+
+
+</script></section></div>
+        </div>
+
+        <script src="./lib/js/head.min.js"></script>
+        <script src="./js/reveal.js"></script>
+
+        <script>
+            function extend() {
+              var target = {};
+              for (var i = 0; i < arguments.length; i++) {
+                var source = arguments[i];
+                for (var key in source) {
+                  if (source.hasOwnProperty(key)) {
+                    target[key] = source[key];
+                  }
+                }
+              }
+              return target;
+            }
+
+            // Optional libraries used to extend on reveal.js
+            var deps = [
+              { src: './lib/js/classList.js', condition: function() { return !document.body.classList; } },
+              { src: './plugin/markdown/marked.js', condition: function() { return !!document.querySelector('[data-markdown]'); } },
+              { src: './plugin/markdown/markdown.js', condition: function() { return !!document.querySelector('[data-markdown]'); } },
+              { src: './plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+              { src: './plugin/zoom-js/zoom.js', async: true },
+              { src: './plugin/notes/notes.js', async: true },
+              { src: './plugin/math/math.js', async: true }
+            ];
+
+            // default options to init reveal.js
+            var defaultOptions = {
+              controls: true,
+              progress: true,
+              history: true,
+              center: true,
+              transition: 'default', // none/fade/slide/convex/concave/zoom
+              dependencies: deps
+            };
+
+            // options from URL query string
+            var queryOptions = Reveal.getQueryHash() || {};
+
+            var options = {};
+            options = extend(defaultOptions, options, queryOptions);
+        </script>
+
+
+        <script>
+            Reveal.initialize(options);
+        </script>
+    </body>
+</html>
